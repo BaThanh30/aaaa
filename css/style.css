@@ -578,7 +578,7 @@ h1, h2, h3, h4, h5, h6 {
           bottom: 0;
           right: 0;
           top: 0;
-          background: rgba(0, 0, 0, 0.4); }
+          /*background: rgba(0, 0, 0, 0.4);*/ }
       .site-blocks-cover .img-wrap .slide img {
         position: absolute;
         top: 0;
@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 .hero-slider .owl-nav {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 120px;
   right: 50px;
   z-index: 100; }
