@@ -590,7 +590,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 3;
     position: relative; }
     .site-blocks-cover .intro .heading h1 {
-      color: #fff; }
+      color: #fff;
+      font-family: 'uvf-didot'; }
     @media (max-width: 991.98px) {
       .site-blocks-cover .intro .heading {
         margin-left: 0; } }
@@ -607,11 +608,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-slider .owl-nav {
   /*position: absolute;*/
-  bottom: 120px;
+  /*bottom: 120px;
   right: 50px;
-  z-index: 100; }
+  z-index: 100;*/ }
   .hero-slider .owl-nav .owl-prev, .hero-slider .owl-nav .owl-next {
-    width: 50px;
+  /*  width: 50px;
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -619,7 +620,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #007bff;
     color: #fff;
     margin-bottom: 10px;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;*/ }
 
 .section-title .sub-title {
   font-size: 1rem;
