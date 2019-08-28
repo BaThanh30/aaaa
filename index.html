@@ -110,22 +110,91 @@
             <img src="images/sp.jpg" alt="Image" class="img-fluid" class="img-fluid">
           </div>
           <div class="col-lg-5 ml-auto section-title">
-            <span class="sub-title mb-2 d-block">About Us</span>
-            <h2 class="title text-primary mb-3">We Are Expert In Web</h2>
-            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
+            <!-- <span class="sub-title mb-2 d-block">About Us</span> -->
+            <h2 class="title mb-3" style="font-family: 'utm-french';font-size: 2.2rem;color: #ff0099">Bộ Sản Phẩm Gel Dưỡng Mắt & Máy Massage Ion Mini</h2>
+            <p class="mb-4" style="font-family: utm-french; font-size: 1.2rem">Nhập khẩu trực tiếp từ Hà Lan và phân phối độc quyền từ thương hiệu Deold.</p>
 
             <div class="d-flex">
               <ul class="list-unstyled ul-check success mr-5">
-                <li>Design</li>
-                <li>Development</li>
-                <li>eCommerce</li>
-                <li>Mobile Apps</li>
-                <li>Copywriting</li>
-                <li>SEO</li>
+                <li style="font-size: 1.2rem; font-family: 'utm-french'">Trị quầng thâm và bọng mắt hiệu quả nhanh chóng.</li>
+                <li style="font-size: 1.2rem; font-family: 'utm-french'">Nuôi dưỡng vùng da quanh mắt sau điều trị, ngăn thâm/bọng quay trở lại.</li>
+                <li style="font-size: 1.2rem; font-family: 'utm-french'">Căng da dưới vùng mắt, xóa nếp nhăn, vết chân chim.</li>
+                <li style="font-size: 1.2rem; font-family: 'utm-french'">Mang đến nét tươi trẻ, rạng ngời, sự tự tin cho phái đẹp.</li>
+                <li style="font-size: 1.2rem; font-family: 'utm-french'; color: #ff0099">Đi kèm máy Massage mini ion độc quyền từ sản phẩm của Deold.</li>
+                <!-- <li>SEO</li> -->
               </ul>
             </div>
-            <p><a data-fancybox data-ratio="2" href="https://vimeo.com/326176805" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
+            <!-- <p><a data-fancybox data-ratio="2" href="https://vimeo.com/326176805" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p> -->
+            <!-- Pop up show  -->
+            <!-- ---------------------------------------------------------------------------------------- -->
+            <div class="container">
+              <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: #ff0099; border-color: #ff0099;">
+                Đặt Hàng Tại Đây
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content"style="height: 660px;">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Thông Tin Khách Hàng</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body"style="width: 450px; height: 500px;">
+                      <form  id="test-form" action="https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec" method="GET" class="contact-form" style="width: 460px;height: 500px;">
+
+                        <div class="row mb-4">
+                          <div class="col-md-6 mb-4 mb-md-0">
+                            <input type="text" name="ho_ten" class="form-control" placeholder="Họ & Tên"/>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="number" name="so_dien_thoai" class="form-control" placeholder="Số Điện Thoại"/>
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-12">
+                            <input type="text" name="email" class="form-control" placeholder="Email"/>
+                          </div>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col-12">
+                            <input type="text" name="tin_nhan" class="form-control" placeholder="Ý Kiến Khách Hàng" style="height: 150px;"></input>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-md" style="background-color: #ff0099; border-color: #ff0099;">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                      <!-- <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec">
+                        <input type="text" name="Truong_so_1" placeholder="Trường số 1"/>
+                        <input type="text" name="Truong_so_2" placeholder="Trường số 2"/>
+                        <input type="text" name="Truong_so_3" placeholder="Trường số 3"/>
+                        <button type="submit"id="submit-form">Gửi</button>
+                        </form> -->
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- pop up end -->
           </div>
         </div>
       </div>
@@ -528,7 +597,34 @@
   
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function()
+ { 
+   var submit = $("button[type='submit']");
+   submit.click(function()
+               {
+                  var data = $('form#test-form').serialize();
+                  $.ajax({
+                            type : 'GET', 
+                            url : 'https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec',
+                            dataType:'json',
+                            crossDomain : true,
+                            data : data,
+                            success : function(data)
+                          { 
+                  if(data == 'false') 
+                          {
+                             alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+                          }else{
+                             alert('Đã thêm dữ liệu vào Form');
+                          }
+               }
+    });
+    return false;
+   });
+ });
+</script>
      
   </body>
 </html>
