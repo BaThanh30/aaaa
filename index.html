@@ -149,38 +149,39 @@
                       <form  id="test-form" action="https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec" method="GET" class="contact-form" style="width: 460px;height: 500px;">
 
                         <div class="row mb-4">
-                          <div class="col-md-6 mb-4 mb-md-0">
-                            <input type="text" name="ho_ten" class="form-control" placeholder="Họ & Tên"/>
+                          <div class="col-12">
+                            <input type="text" name="ho_ten" class="form-control" placeholder="Họ & Tên" required/>
                           </div>
-                          <div class="col-md-6">
-                            <input type="number" name="so_dien_thoai" class="form-control" placeholder="Số Điện Thoại"/>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-12">
+                            <input type="tel" name="so_dien_thoai" class="form-control" pattern="^\d{10}$" placeholder="Số Điện Thoại" required/>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-12">
+                            <input type="number" name="so_luong" class="form-control" min="1" placeholder="Số Lượng" required/>
                           </div>
                         </div>
 
                         <div class="row mb-4">
                           <div class="col-12">
-                            <input type="text" name="email" class="form-control" placeholder="Email"/>
+                            <input type="text" name="email" class="form-control" placeholder="Email" required/>
                           </div>
                         </div>
 
                         <div class="row mb-4">
                           <div class="col-12">
-                            <input type="text" name="tin_nhan" class="form-control" placeholder="Ý Kiến Khách Hàng" style="height: 150px;"></input>
+                            <input type="text" name="tin_nhan" class="form-control" placeholder="Ý Kiến Khách Hàng" style="height: 100px;">
                           </div>
                         </div>
 
                         <div class="row">
                           <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-md" style="background-color: #ff0099; border-color: #ff0099;">Send Message</button>
+                            <input class="btn btn-primary btn-md" type="submit" value="Send message" style="background-color: #ff0099; border-color: #ff0099;">
                           </div>
                         </div>
                       </form>
-                      <!-- <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec">
-                        <input type="text" name="Truong_so_1" placeholder="Trường số 1"/>
-                        <input type="text" name="Truong_so_2" placeholder="Trường số 2"/>
-                        <input type="text" name="Truong_so_3" placeholder="Trường số 3"/>
-                        <button type="submit"id="submit-form">Gửi</button>
-                        </form> -->
                     </div>
                     
                     <!-- Modal footer -->
@@ -190,8 +191,7 @@
                     
                   </div>
                 </div>
-              </div>
-              
+              </div> 
             </div>
 
             <!-- pop up end -->
@@ -555,10 +555,6 @@
               </form>
 
             </div>
-
-            
-
-
           </div>
           
         </div>
@@ -597,34 +593,33 @@
   
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript">
- $(document).ready(function()
- { 
-   var submit = $("button[type='submit']");
-   submit.click(function()
-               {
-                  var data = $('form#test-form').serialize();
-                  $.ajax({
-                            type : 'GET', 
-                            url : 'https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec',
-                            dataType:'json',
-                            crossDomain : true,
-                            data : data,
-                            success : function(data)
-                          { 
-                  if(data == 'false') 
-                          {
-                             alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
-                          }else{
-                             alert('Đã thêm dữ liệu vào Form');
-                          }
-               }
-    });
-    return false;
+  <script type="text/javascript">
+   $(document).ready(function()
+   { 
+     var submit = $("button[type='submit']");
+     submit.click(function()
+                 {
+                    var data = $('form#test-form').serialize();
+                    $.ajax({
+                              type : 'GET', 
+                              url : 'https://script.google.com/macros/s/AKfycbzuA5bXSywDsfuD_JS1qMLLqMmdV8d2Lbe1ys5wGtFlILaX0eA/exec',
+                              dataType:'json',
+                              crossDomain : true,
+                              data : data,
+                              success : function(data)
+                            { 
+                    if(data == 'false') 
+                            {
+                               alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+                            }else{
+                               alert('Cảm ơn Bạn đã đặt hàng.\nChúng tôi sẽ gọi lại cho bạn để xác nhận đơn hàng');
+                            }
+                 }
+      });
+      return false;
+     });
    });
- });
-</script>
+  </script>
      
   </body>
 </html>
