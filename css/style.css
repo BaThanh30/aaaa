@@ -641,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px;
   background: #fff;
   border: 1px solid #eee;
-  border-top: 2px solid #007bff;
+  border-top: 2px solid #ff0099;
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
@@ -659,7 +659,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
     color: #000; }
   .service p {
-    color: #999999;
+    color: #333333;
     font-size: 1rem; }
 
 .readmore {
