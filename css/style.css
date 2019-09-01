@@ -607,20 +607,34 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 .hero-slider .owl-nav {
-  /*position: absolute;*/
-  /*bottom: 120px;
+  position: absolute;
+  bottom: 120px;
   right: 50px;
-  z-index: 100;*/ }
-  .hero-slider .owl-nav .owl-prev, .hero-slider .owl-nav .owl-next {
-  /*  width: 50px;
+  opacity: 0;
+  z-index: 100; }
+  .hero-slider .owl-nav .owl-prev {
+    width: 50px;
     height: 50px;
+    left: 50px;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
     background: #007bff;
     color: #fff;
     margin-bottom: 10px;
-    font-size: 1.3rem;*/ }
+    font-size: 1.3rem; }
+    .hero-slider .owl-nav .owl-next{
+      width: 50px;
+    height: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.3rem; }
+    }
 
 .section-title .sub-title {
   font-size: 1rem;
